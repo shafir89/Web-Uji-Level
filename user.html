@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="styleprofile.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logonav"><b style="color: #1c2542;">S-Market</b></a>     
+            <a href="#"><input type="search" class="search" placeholder="Cari Barang" ></a>    
+            <a href="#"><button class="ri-search-line"></button></a>  
+            <div> 
+                <a href="index.html"><button class="ri-home-line"></button></a>
+                <a href="daftar-barang.html"><button class="ri-layout-grid-line"></button></a>      
+                <a href="shopping.html"><button class="ri-shopping-cart-line"></button></a>    
+                <a href="user.html"><button class="ri-user-3-line" id="userprofile"></button></a>    
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+        <table>
+            <!-- <form method="post" id="loginform"> -->
+            <tr>
+                <td rowspan="3"><h1> Silahkan Masuk ke Akun<br>S-Market Anda</h1></td>
+                <td class="pemanjang"></td>
+            </tr>   
+            <tr>
+                <td>
+                    <div class="loginMessage">
+                        <form id="loginform">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" required><br>
+    
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required><br>
+    
+                            <input type="submit" value="Login">
+                        </form>
+                    </div>
+                </td>
+                <!-- <td class="kolomborder">
+                    Username<br><input type="text" name="username" id="username" placeholder="Masukan username" required class="inputlogin"><br><br>
+                    Kata Sandi<br><input type="password" name="password" id="password" placeholder="Masukan Kata Sandi" require class="inputlogin"><br><a href="#">Lupa kata sandi?</a><br><br>
+                    <div class="center"><input type="submit" id="tombol-login" onclick="tampilkanAlert()" class="buttonmasuk" value="Login"></div>
+                    <div class="center">Belum punya akun? <a href="#">Buat Akun</a></div> 
+                </td> -->
+            </tr>
+            <tr>
+                <td class="pemanjang"></td>
+            </tr>
+        <!-- </form> --> 
+        </table>
+        <script>document
+            .getElementById("loginform")
+            .addEventListener("submit", function (event) {
+              event.preventDefault();
+          
+              var username = document.getElementById("username").value;
+              var password = document.getElementById("password").value;
+          
+              // Gantilah dengan kondisi validasi yang sesuai
+              if (username === "user" && password === "password") {
+                // Login berhasil, arahkan ke halaman lain
+                window.location.href = "loginpage.html";
+              } else {
+                // Login gagal, tampilkan pesan kesalahan
+                document.getElementById("loginMessage").innerHTML =
+                  "Username atau password salah. Coba lagi.";
+          
+                // Hapus isian form
+                document.getElementById("username").value = "";
+                document.getElementById("password").value = "";
+              }
+            });
+          </script>
+    </main>
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <h4>Kategori Terpopuler</h4>
+                    <p><a href="daftar-barang.html">Pakaian</a></p>
+                    <p><a href="daftar-barang.html">Elektronik</a></p>
+                    <p><a href="daftar-barang.html">Perawatan/a></p>
+                    <p><a href="daftar-barang.html">Sepatu</a></p>
+                    <p><a href="daftar-barang.html">Pakaian</a></p>
+                </td>
+                <td>
+                    <h4>Sosial</h4>
+                    <p><a href="https://twitter.com/?lang=id">Twitter</a></p>
+                    <p><a href="https://www.instagram.com/iybnr__/">Instagram</a></p>
+                    <p><a href="https://www.youtube.com/watch?v=M9Vk48wCyVs">Youtube</a></p>
+                </td>
+                <td>
+                    <h4>Quick Links</h4>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="about.html">Tentang Kami</a></p>
+                    <p><a href="layanan.html">Layanan Kami</a></p>
+                    <p><a href="#">Kritik dan Saran</a></p>
+                </td>
+                <td>
+                    <h4 class="boldfooter">Alamat</h4>
+                    <p>Jl. tuwentiwanseveg No.8</p>
+                    <h4>Hubungi kami</h4>
+                    <p><a href="#">+62*******0067</a></p>
+                    <h4>Email</h4>
+                    <p><a href="mailto:Smarket@gmail.com">Smarket@gmail.com</a></p>
+                </td>
+                <tr>
+                    <td colspan="4">
+                    &copy; 2023 S-Market.
+                    </td>
+                </tr>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>

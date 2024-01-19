@@ -1,0 +1,105 @@
+*{
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+margin: 0;
+padding: 0;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+table{
+  background-color: white;
+  align-items: center;
+}
+.header {
+position: sticky;
+top: 0;
+background-color: #fff; 
+z-index: 100; 
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* navbar */
+.navbar {
+display: flex;
+justify-content:space-around;
+align-items: center;
+padding: 10px 20px; 
+}
+nav a{
+text-decoration: none;
+font-size: xx-large;
+}
+.search{
+width: 290%;
+height:40px ;
+border-radius: 20px;
+text-align: center;
+}
+button{
+width: 40px;
+height:40px;
+border-radius: 20px;
+background: none;
+border: none;
+cursor: pointer;
+}
+button:hover{
+color: white;
+background-color: #1c2542;
+}
+/* footer */
+footer table{
+background-color: black;
+width: 100%;
+align-items: center;
+border: 2;
+border-color: white;
+}
+footer{
+color: #fff;
+text-align: center;
+}
+footer a{
+color: #fff;
+cursor: pointer;
+text-decoration: none;
+}
+footer a:hover{
+color: violet;
+}
+
+  #shopuser:hover{
+    color: white;
+  }
+ img{
+  width: 100%;
+  cursor: pointer;
+ }
+ table{
+  border-spacing: 15px;
+ }
+
+ table td{
+  table-layout:fixed;
+  width: 20px;
+ }
+.kursor{
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+.kursor:hover{
+  box-shadow: 0 0 10px #605583;
+}
+.submit{
+  width: 100px;
+  background-color:#605583;
+  border-radius: 6px;
+}
+.submit:hover{
+  color: white;
+}

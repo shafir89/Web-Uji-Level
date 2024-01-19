@@ -1,0 +1,120 @@
+html{
+  scroll-behavior: smooth;
+  align-items: center;
+}
+*{
+  font-family: "poppins",sans-serif;
+}
+body{
+  margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #fff; 
+  z-index: 100; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding: 10px 20px; 
+}
+nav a{
+  text-decoration: none;
+  font-size: xx-large;
+}
+.search{
+  width: 290%;
+  height:40px ;
+  border-radius: 20px;
+  text-align: center;
+}
+button{
+  width: 40px;
+  height:40px;
+  border-radius: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+button:hover{
+  color: white;
+  background-color: #1c2542;
+}
+/* footer */
+footer table{
+  background-color: black;
+  width: 100%;
+  align-items: center;
+  border: 2;
+  border-color: white;
+}
+footer{
+  color: #fff;
+  text-align: center;
+}
+footer a{
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+footer a:hover{
+  color: violet;
+}
+/* bghome */
+
+.textbghome { display: none; }
+.kolom-luar-home{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  grid: 10px;
+}
+.div0{
+  padding: 20px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(5,1fr) ; 
+  gap: 18px;
+  grid: 20px; 
+}
+
+.div1{
+  padding-left: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.div1:hover {
+  box-shadow: 0 0 10px #605583;
+}
+.container img{
+  width: 100%;
+}
+.teks-tipis{
+  color: gray;
+}
+.container img{
+  cursor: pointer;
+}
+del{
+  color: grey;
+  font-size: 15px;
+}
+.container b{
+  cursor: pointer;
+}
+.pemanjang{
+  height: 30px;
+}
